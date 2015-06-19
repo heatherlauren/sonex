@@ -13,9 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sonex' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'sonex' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'sonex' ), 'sonex', '<a href="http://underscores.me/" rel="designer">heatherlauren</a>' ); ?>
+			<?php printf( esc_html__( 'Design %1$s by %2$s.', '' ), '', '<a href="http://heatherlauren.me/" rel="designer">heatherlauren</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
