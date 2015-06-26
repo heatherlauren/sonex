@@ -14,6 +14,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="//use.typekit.net/xuo7gug.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>
@@ -23,14 +25,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sonex' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
+		<img src="<?php echo get_bloginfo('template_url') ?>/img/titlebanner.png">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sonex' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+		<nav id="site-navigation">
+			<ul>
+			<?php wp_list_pages('title_li='); ?>
+			<li>| <a href="http://cordelia.local:5757/forums">Forums</a></li>
+			</ul>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

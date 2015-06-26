@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -687,3 +687,70 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Front Page
+--------------------------------------------------------------*/
+#accordion {
+  width: 95%;
+  margin: auto auto; }
+  #accordion ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 125%; }
+
+.site-footer {
+  background: white;
+  margin-top: 1rem;
+  padding: 1%; }
+
+.site-info {
+  text-align: center; }
+  .site-info ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+  .site-info li {
+    display: inline; }
+  .site-info a {
+    text-decoration: none; }
+
+#site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+#site-navigation li {
+  display: inline; }
+#site-navigation a {
+  text-decoration: none; }
+
+#masthead {
+  background: white;
+  padding: 0.5% 2% 1% 2%; }
+
+.entry-meta {
+  background: red;
+  padding: 1%;
+  padding-left: 2.5%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.entry-title {
+  padding: 1%;
+  padding-left: 2.5%;
+  background: blue;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+
+@media screen and (min-width: 800px) {
+  .news-main {
+    padding: 1% 20% 1% 20%; } }
+@media screen and (max-width: 800px) {
+  .news-main {
+    padding: 2.5%; } }
