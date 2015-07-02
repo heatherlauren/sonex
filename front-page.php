@@ -40,7 +40,7 @@ get_header(); ?>
 			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae laudantium, dolores, voluptatibus, aperiam quia harum necessitatibus nihil ipsa ex fugiat! Quas cupiditate sed fugit ut laboriosam incidunt alias enim?
 			    </p>
 			  </div>
-			  <h3>Latest News</h3>
+			  <h3>Recent Updates</h3>
 			  <div>
 			    <ul>
 					<?php
