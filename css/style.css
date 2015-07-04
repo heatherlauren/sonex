@@ -743,6 +743,9 @@ object {
   background: white;
   padding: 0.5% 2% 1% 2%; }
 
+.header-logo {
+  height: 25vh; }
+
 /*--------------------------------------------------------------
 ## News
 --------------------------------------------------------------*/
@@ -767,3 +770,55 @@ object {
 @media screen and (max-width: 800px) {
   .news-main {
     padding: 2.5%; } }
+/*--------------------------------------------------------------
+## Resources
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Default
+--------------------------------------------------------------*/
+.ui-tabs-vertical {
+  width: 55em; }
+
+.ui-tabs-vertical .ui-tabs-nav {
+  padding: .2em .1em .2em .2em;
+  float: left;
+  width: 12em; }
+
+.ui-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  border-bottom-width: 1px !important;
+  border-right-width: 0 !important;
+  margin: 0 -1px .2em 0; }
+
+.ui-tabs-vertical .ui-tabs-nav li a {
+  display: block; }
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  padding-bottom: 0;
+  padding-right: .1em;
+  border-right-width: 1px; }
+
+.ui-tabs-vertical .ui-tabs-panel {
+  padding: 1em;
+  float: right;
+  width: 40em; }
+
+ /*--------------------------------------------------------------
+## Custom
+--------------------------------------------------------------*/
+#tabs {
+  margin: auto auto;
+  padding: 1rem;
+  font-weight: 700; }
+  #tabs #title {
+    margin-left: 0.5rem; }
+  #tabs .ui-state-active, #tabs .ui-widget-content .ui-state-active, #tabs .ui-widget-header .ui-state-active {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
+    #tabs .ui-state-active a, #tabs .ui-widget-content .ui-state-active a, #tabs .ui-widget-header .ui-state-active a {
+      color: white; }
+  #tabs .ui-state-default .ui-icon, #tabs .ui-widget-content .ui-state-default .ui-icon, #tabs .ui-widget-header .ui-state-default .ui-icon {
+    color: black; }

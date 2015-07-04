@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sonex' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<img src="<?php echo get_bloginfo('template_url') ?>/img/logo.svg">
+		<img class="header-logo" src="<?php echo get_bloginfo('template_url') ?>/img/logo.svg">
 
 		<nav id="site-navigation">
 			<ul>

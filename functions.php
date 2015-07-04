@@ -131,6 +131,7 @@ function load_jquery_ui_google_cdn() {
     wp_enqueue_script('jquery-ui-widget');
     wp_enqueue_script( 'jquery-effects-core' );
 	wp_enqueue_script( 'jquery-ui-accordion' );
+	wp_enqueue_script( 'jquery-ui-tabs' );
 
     $queryui = $wp_scripts->query('jquery-ui-core');
  
@@ -140,6 +141,12 @@ function load_jquery_ui_google_cdn() {
 }
  
 add_action('wp_enqueue_scripts', 'load_jquery_ui_google_cdn');
+
+   function new_excerpt_more($more) {
+   global $post;
+   return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
+   }
+   add_filter('excerpt_more', 'new_excerpt_more');
 
 
 /**
