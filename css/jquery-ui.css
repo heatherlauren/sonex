@@ -118,6 +118,7 @@
 	padding: 1em 2.2em;
 	border-top: 0;
 	overflow: auto;
+	background: white;
 }
 .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
@@ -160,7 +161,11 @@
 	display: block;
 	border-width: 0;
 	padding: 1em 1.4em;
-	background: none;
+	background: white;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 15px;
 }
 
 /* Component containers
@@ -180,7 +185,6 @@
 	font-size: 1em;
 }
 .ui-widget-content {
-	background: white;
 	color: #222222;
 }
 .ui-widget-content a {

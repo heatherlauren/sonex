@@ -22,3 +22,22 @@
 ## Resources
 --------------------------------------------------------------*/
 @import "resources";
+
+
+/*--------------------------------------------------------------
+## Custom
+--------------------------------------------------------------*/
+#content {
+	min-height: 60vh;
+}
+
+.site-header {
+	min-height: 25vh;
+}
+
+.entry-content {
+	background: white;
+	padding: 1em;
+	border-radius: 10px;
+	margin-top: 0.75em;
+}

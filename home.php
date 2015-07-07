@@ -7,36 +7,39 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main news-main" role="main">
+		<div id="primary" class="content-area news-content-area">
+			<main id="main" class="site-main news-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+				<h1 class="title">News</h1>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) : ?>
 
-				<?php
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/excerpt', get_post_format() );
-				?>
+						<?php
 
-			<?php endwhile; ?>
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'template-parts/excerpt', get_post_format() );
+						?>
 
-			<?php the_posts_navigation(); ?>
+					<?php endwhile; ?>
 
-		<?php else : ?>
+					<?php the_posts_navigation(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php endif; ?>
+
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
 
-<?php get_footer(); ?>
+		<?php get_sidebar(); ?>
+		<?php get_footer(); ?>

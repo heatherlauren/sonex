@@ -33,6 +33,16 @@
  /*--------------------------------------------------------------
 ## Custom
 --------------------------------------------------------------*/
+
+.title {
+	background: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom: 0.4em solid #E5E5E5;
+	padding: 1% 1% 0%;
+	padding-left: 2.5%;
+}
+
 #tabs {
 	margin: auto auto;
 	padding: 1rem;
@@ -40,6 +50,11 @@
 
 	#title {
 		margin-left: 0.5rem;
+	}
+
+	.ui-tabs-nav {
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
 	}
 
 	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {

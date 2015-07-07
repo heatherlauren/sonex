@@ -15,7 +15,6 @@ get_header(); ?>
 	    			"activeHeader": "ui-icon-carat-1-e"
 	    		},
 	    		collapsible: true,
-	    		active: false
 	    	});
 		});
 	</script>
@@ -24,30 +23,25 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 	
 			<div id="accordion">
-			  <h3>Sonex</h3>
-			  <div>
+			  <h3>Sonex in Europe</h3>
+			  <div id="front-page-info">
 			    <p>
-			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut, quibusdam odit modi praesentium voluptatem veniam beatae perspiciatis mollitia, repellat magni fugit pariatur. Voluptate nisi, quisquam quis et natus voluptas!
+			    	<?php while ( have_posts() ) : the_post(); ?>
 
-			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae laudantium, dolores, voluptatibus, aperiam quia harum necessitatibus nihil ipsa ex fugiat! Quas cupiditate sed fugit ut laboriosam incidunt alias enim?
-				</p>
-			  </div>
-			  <h3>Sonex Europe</h3>
-			  <div>
-			    <p>
-			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut, quibusdam odit modi praesentium voluptatem veniam beatae perspiciatis mollitia, repellat magni fugit pariatur. Voluptate nisi, quisquam quis et natus voluptas!
+						<?php get_template_part( 'template-parts/content-front-page' ); ?>
 
-			    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae laudantium, dolores, voluptatibus, aperiam quia harum necessitatibus nihil ipsa ex fugiat! Quas cupiditate sed fugit ut laboriosam incidunt alias enim?
+					<?php endwhile; // End of the loop. ?>
 			    </p>
 			  </div>
 			  <h3>Recent Updates</h3>
-			  <div>
+			  <div id="front-page-updates">
 			    <ul>
 					<?php
 						$args = array( 'numberposts' => '5' );
+
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
-							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> ';
 						}
 					?>
 				</ul>

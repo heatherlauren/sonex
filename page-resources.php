@@ -13,7 +13,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main resources-main" role="main">
 
 			<script>
 			  jQuery(function() {
@@ -24,7 +24,7 @@ get_header(); ?>
 
 
 			<div id="tabs">
-				<h1 id="title">Resources</h1>
+				<h1 class="title">Resources</h1>
 			  <ul>
 			    <li><a href="#tabs-1">Video</a></li>
 			    <li><a href="#tabs-2">Links</a></li>
