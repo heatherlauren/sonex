@@ -16,22 +16,22 @@ get_header(); ?>
 		<main id="main" class="site-main resources-main" role="main">
 
 			<script>
-			  jQuery(function() {
-			    jQuery( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-			    jQuery( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-			  });
-			  </script>
+			jQuery(function() {
+				jQuery('#responsiveTabsDemo').responsiveTabs({
+				    startCollapsed: 'accordion',
+				});
+			});
+			</script>
 
+			<h1 class="title">Resources</h1>
 
-			<div id="tabs">
-				<h1 class="title">Resources</h1>
+			<div id="responsiveTabsDemo">
 			  <ul>
-			    <li><a href="#tabs-1">Video</a></li>
-			    <li><a href="#tabs-2">Links</a></li>
-			    <li><a href="#tabs-3">Other</a></li>
+			    <li><a href="#tab-1">Video</a></li>
+			    <li><a href="#tab-2">Links</a></li>
+			    <li><a href="#tab-3">Other</a></li>
 			  </ul>
-			  <div id="tabs-1">
-			    <h2>Video</h2>
+			  <div id="tab-1">
 			    <p>
 			    	<?php
 						$args = array( 'numberposts' => '5' );
@@ -42,8 +42,7 @@ get_header(); ?>
 					?>
 			    </p>
 			  </div>
-			  <div id="tabs-2">
-			    <h2>Links</h2>
+			  <div id="tab-2">
 			    <p>
 			    	<?php
 						$args = array( 'numberposts' => '5' );
@@ -54,8 +53,7 @@ get_header(); ?>
 					?>
 			    </p>
 			  </div>
-			  <div id="tabs-3">
-			    <h2>Other</h2>
+			  <div id="tab-3">
 			    <p>
 			    	<?php
 						$args = array( 'numberposts' => '5' );

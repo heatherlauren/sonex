@@ -17,6 +17,11 @@
 			<?php wp_list_pages('title_li='); ?>
 			<li><a href="http://cordelia.local:5757/forums">Forums</a></li>
 			</ul>
+		
+			<div id="footer-disclaimer">
+				<p>Sonex in Europe is an unofficial site for owners and builders of the Sonex family of homebuilt aircraft in Europe.</p>
+				<p>It is not run or moderated by Sonex Aircraft, LLC.</p>
+			</div>
 
 			Copyright &copy; 
 				<script type="text/javascript">

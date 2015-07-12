@@ -23,6 +23,16 @@
 --------------------------------------------------------------*/
 @import "resources";
 
+/*--------------------------------------------------------------
+## Contact
+--------------------------------------------------------------*/
+@import "contact";
+
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+@import "post";
+
 
 /*--------------------------------------------------------------
 ## Custom
@@ -35,9 +45,30 @@
 	min-height: 25vh;
 }
 
+.site-main {
+	margin: auto 5%;
+}
+
 .entry-content {
 	background: white;
 	padding: 1em;
 	border-radius: 10px;
 	margin-top: 0.75em;
+}
+
+.excerpt-link {
+	color: $blue;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.forums-main {
+	.entry-title {
+		background: white;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-bottom: 0.4em solid #E5E5E5;
+		padding: 1% 1% 0%;
+		padding-left: 2.5%;
+	}
 }

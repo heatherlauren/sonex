@@ -1,0 +1,31 @@
+.comment-list {
+	list-style-type: none;
+}
+
+.comment-body {
+	background: white;
+	border-radius: 15px;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.entry-title {
+	padding: 1%;
+	padding-left: 2.5%;
+	background: $yellow;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.entry-meta {
+	background: $grey;
+	margin-top: -1.4rem;
+	padding: 1%;
+	padding-left: 2.5%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.nav-links {
+	display: none;
+}

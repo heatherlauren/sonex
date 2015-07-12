@@ -48,7 +48,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  font-size: 100%; }
 
 body {
   margin: 0; }
@@ -407,11 +408,10 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: black;
+  text-decoration: none; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #0D0061; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -749,7 +749,12 @@ object {
   margin-top: -1em; }
 
 #front-page-updates li {
-  margin: 0.75em; }
+  margin: 0.2em;
+  padding: 0.5em;
+  font-weight: 700;
+  border-bottom: 0.1em solid #E5E5E5; }
+#front-page-updates li:first-child {
+  border-top: 0.1em solid #E5E5E5; }
 
 /*--------------------------------------------------------------
 ## Footer
@@ -757,25 +762,42 @@ object {
 .site-footer {
   background: white;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 1%;
   position: absolute;
   width: 100%; }
 
 .site-info {
-  text-align: center; }
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem; }
   .site-info ul {
     list-style: none;
     text-align: center;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    font-size: 1rem; }
   .site-info li {
-    display: inline; }
+    display: inline;
+    font-weight: 700;
+    margin-left: 0.2em;
+    margin-right: 0.2em; }
   .site-info a {
     text-decoration: none; }
+
+#footer-disclaimer {
+  margin: 0.3rem; }
+  #footer-disclaimer p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0; }
 
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header {
+  border-bottom: 1em solid #FBDF25; }
+
 #site-navigation ul {
   list-style: none;
   padding: 0;
@@ -795,6 +817,44 @@ object {
 /*--------------------------------------------------------------
 ## News
 --------------------------------------------------------------*/
+.news-main .title {
+  background: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0.4em solid #E5E5E5;
+  padding: 1% 1% 0%;
+  padding-left: 2.5%; }
+.news-main .entry-title {
+  padding: 1%;
+  padding-left: 2.5%;
+  background: #FBDF25;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+.news-main .entry-meta {
+  background: #E5E5E5;
+  margin-top: -1.4rem;
+  padding: 1%;
+  padding-left: 2.5%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+@media screen and (min-width: 820px) {
+  .news-main {
+    padding: 1% 5% 1% 5%; } }
+@media screen and (max-width: 820px) {
+  .news-main {
+    padding: 2.5%;
+    margin: 1rem 1rem; }
+    .news-main .entry-title {
+      text-align: center; }
+    .news-main .entry-meta {
+      text-align: center; }
+
+  .title {
+    text-align: center; } }
+/*--------------------------------------------------------------
+## Resources
+--------------------------------------------------------------*/
 .title {
   background: white;
   border-top-left-radius: 15px;
@@ -802,6 +862,90 @@ object {
   border-bottom: 0.4em solid #E5E5E5;
   padding: 1% 1% 0%;
   padding-left: 2.5%; }
+
+/* Tabs container */
+.r-tabs {
+  position: relative;
+  background-color: #FBDF25;
+  border: 1em solid #FBDF25;
+  border-radius: 15px; }
+  .r-tabs li {
+    font-size: 1.2rem; }
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  position: relative;
+  background-color: #FBDF25; }
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: black; }
+
+/* Disabled tab */
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+  opacity: 0.5; }
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: black;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px; }
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+  background-color: white;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px; }
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+  display: block;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #FBDF25;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px; }
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+  background-color: white;
+  color: black; }
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+  opacity: 0.5; }
+
+/*--------------------------------------------------------------
+## Contact
+--------------------------------------------------------------*/
+.contact-main .entry-title {
+  background: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0.4em solid #E5E5E5;
+  padding: 1% 1% 0%;
+  padding-left: 2.5%; }
+
+/*--------------------------------------------------------------
+## Post
+--------------------------------------------------------------*/
+.comment-list {
+  list-style-type: none; }
+
+.comment-body {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem; }
 
 .entry-title {
   padding: 1%;
@@ -818,76 +962,8 @@ object {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px; }
 
-@media screen and (min-width: 820px) {
-  .news-main {
-    padding: 1% 5% 1% 5%; } }
-@media screen and (max-width: 820px) {
-  .news-main {
-    padding: 2.5%;
-    margin: 1rem 1rem; } }
-/*--------------------------------------------------------------
-## Resources
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Default
---------------------------------------------------------------*/
-.ui-tabs-vertical {
-  width: 55em; }
-
-.ui-tabs-vertical .ui-tabs-nav {
-  padding: .2em .1em .2em .2em;
-  float: left;
-  width: 12em; }
-
-.ui-tabs-vertical .ui-tabs-nav li {
-  clear: left;
-  width: 100%;
-  border-bottom-width: 1px !important;
-  border-right-width: 0 !important;
-  margin: 0 -1px .2em 0; }
-
-.ui-tabs-vertical .ui-tabs-nav li a {
-  display: block; }
-
-.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
-  padding-bottom: 0;
-  padding-right: .1em;
-  border-right-width: 1px; }
-
-.ui-tabs-vertical .ui-tabs-panel {
-  padding: 1em;
-  float: right;
-  width: 40em; }
-
- /*--------------------------------------------------------------
-## Custom
---------------------------------------------------------------*/
-.title {
-  background: white;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom: 0.4em solid #E5E5E5;
-  padding: 1% 1% 0%;
-  padding-left: 2.5%; }
-
-#tabs {
-  margin: auto auto;
-  padding: 1rem;
-  font-weight: 700; }
-  #tabs #title {
-    margin-left: 0.5rem; }
-  #tabs .ui-tabs-nav {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px; }
-  #tabs .ui-state-active, #tabs .ui-widget-content .ui-state-active, #tabs .ui-widget-header .ui-state-active {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px; }
-    #tabs .ui-state-active a, #tabs .ui-widget-content .ui-state-active a, #tabs .ui-widget-header .ui-state-active a {
-      color: white; }
-  #tabs .ui-state-default .ui-icon, #tabs .ui-widget-content .ui-state-default .ui-icon, #tabs .ui-widget-header .ui-state-default .ui-icon {
-    color: black; }
+.nav-links {
+  display: none; }
 
 /*--------------------------------------------------------------
 ## Custom
@@ -898,8 +974,24 @@ object {
 .site-header {
   min-height: 25vh; }
 
+.site-main {
+  margin: auto 5%; }
+
 .entry-content {
   background: white;
   padding: 1em;
   border-radius: 10px;
   margin-top: 0.75em; }
+
+.excerpt-link {
+  color: #0955C8;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.forums-main .entry-title {
+  background: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0.4em solid #E5E5E5;
+  padding: 1% 1% 0%;
+  padding-left: 2.5%; }

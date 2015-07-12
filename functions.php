@@ -136,15 +136,18 @@ function load_jquery_ui_google_cdn() {
     $queryui = $wp_scripts->query('jquery-ui-core');
  
     wp_enqueue_style( 'jquery-style', get_template_directory_uri() . '/css/jquery-ui.css' );
-    /** wp_enqueue_style( 'jquery-structure', get_template_directory_uri() . '/css/jquery-ui.structure.css' );
-    /** wp_enqueue_style( 'jquery-theme', get_template_directory_uri() . '/css/jquery-ui.theme.css' ); **/
+
+    wp_enqueue_style( 'tabs-style', get_template_directory_uri() . '/css/responsive-tabs.css' );
+    wp_enqueue_script( 'tabs-script', get_template_directory_uri() . '/js/jquery.responsiveTabs.js' );
+
+    
 }
  
 add_action('wp_enqueue_scripts', 'load_jquery_ui_google_cdn');
 
    function new_excerpt_more($more) {
    global $post;
-   return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
+   return '… <a class="excerpt-link" href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
    }
    add_filter('excerpt_more', 'new_excerpt_more');
 
