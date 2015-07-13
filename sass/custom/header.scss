@@ -1,8 +1,17 @@
 .site-header {
 	border-bottom: 1em solid $yellow;
+	background: white;
 }
 
 #site-navigation {
+	background: $grey;
+	margin: auto;
+	padding: 0.75rem;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
 	ul {
 		list-style: none;
 		padding: 0;
@@ -17,10 +26,29 @@
 }
 
 #masthead {
-	background: white;
 	padding: 0.5% 2% 1% 2%;
 }
 
 .header-logo {
 	height: 20vh;
+}
+
+@media screen and (min-width: 780px) {
+	#site-navigation {
+		width: 75%;
+	}
+	li {
+		margin-left: 0.8rem;
+		margin-right: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	#site-navigation {
+		width: 100%;
+	}
+	li {
+		margin-left: 0.7rem;
+		margin-right: 0.7rem;
+	}
 }

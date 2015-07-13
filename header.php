@@ -30,7 +30,7 @@
 		<nav id="site-navigation">
 			<ul>
 			<?php wp_list_pages('title_li='); ?>
-			<li>| <a href="http://cordelia.local:5757/forums">Forums</a></li>
+			<li><a href="http://cordelia.local:5757/forums">Forums</a></li>
 			</ul>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
