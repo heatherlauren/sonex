@@ -27,14 +27,15 @@ get_header(); ?>
 
 			<div id="responsiveTabsDemo">
 			  <ul>
-			    <li><a href="#tab-1">Video</a></li>
-			    <li><a href="#tab-2">Links</a></li>
-			    <li><a href="#tab-3">Other</a></li>
+			    <li><a href="#tab-1">All</a></li>
+			    <li><a href="#tab-2">Text</a></li>
+			    <li><a href="#tab-3">Video</a></li>
+			    <li><a href="#tab-4">Other</a></li>
 			  </ul>
 			  <div id="tab-1">
 			    <p>
 			    	<?php
-						$args = array( 'numberposts' => '5' );
+			    		$args = array('category' => '4');
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
@@ -45,7 +46,7 @@ get_header(); ?>
 			  <div id="tab-2">
 			    <p>
 			    	<?php
-						$args = array( 'numberposts' => '5' );
+			    		$args = array('category' => '6');
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
@@ -56,7 +57,18 @@ get_header(); ?>
 			  <div id="tab-3">
 			    <p>
 			    	<?php
-						$args = array( 'numberposts' => '5' );
+			    		$args = array('category' => '5');
+						$recent_posts = wp_get_recent_posts( $args );
+						foreach( $recent_posts as $recent ){
+							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+						}
+					?>
+			    </p>
+			  </div>
+			  <div id="tab-4">
+			    <p>
+			    	<?php
+			    		$args = array('category' => '7');
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
