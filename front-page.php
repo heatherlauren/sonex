@@ -15,7 +15,7 @@ get_header(); ?>
 	    			"activeHeader": "ui-icon-carat-1-e"
 	    		},
 	    		collapsible: true,
-	    		heightStyle: "content";
+	    		heightStyle: "content"
 	    	});
 		});
 	</script>
