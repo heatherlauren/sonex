@@ -27,7 +27,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sonex' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<a href="http://sonexeuro.com"><img class="header-logo" src="<?php echo get_bloginfo('template_url') ?>/img/logo.svg"></a>
+		<a href="http://sonexeuro.com"><img class="header-logo" alt="Sonex in Europe" src="<?php echo get_bloginfo('template_url') ?>/img/logo.png"></a>
 
 		<nav id="site-navigation">
 			<ul>
