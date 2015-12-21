@@ -6,7 +6,7 @@
 <defs>
 	<style type="text/css"><![CDATA[
 		#Layer_2 {
-			font-family: 'sinkin_sans900_x_black_italic';
+			font-family: 'sinkin_sans900_x_black_italic', sans-serif;
 		}
 	]]></style>
 </defs>
