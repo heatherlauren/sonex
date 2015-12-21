@@ -241,8 +241,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'sinkin_sans900_x_black_italic';
-  src: url(public_html/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.eot);
-  src: url(public_html/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.eot?#iefix) format("embedded-opentype"), url(public_html/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.woff) format("woff"), url(public_html/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.ttf) format("truetype"), url(public_html/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.svg#sinkin_sans900_x_black_italic) format("svg");
+  src: url("http://sonexeuro.com/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.eot");
+  src: url("http://sonexeuro.com/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.eot?#iefix") format("embedded-opentype"), url("http://sonexeuro.com/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.woff") format("woff"), url("http://sonexeuro.com/sonexeuro/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.ttf") format("truetype"), url("http://sonexeuro.com/wp-content/themes/sonexeuro/fonts/SinkinSans-900XBlackItalic-webfont.svg#sinkin_sans900_x_black_italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 p {
