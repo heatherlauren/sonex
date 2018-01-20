@@ -14,8 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="//use.typekit.net/xuo7gug.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
 <link rel="icon" href="<?php bloginfo('siteurl'); ?>/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<?php bloginfo('siteurl'); ?>/favicon.ico" type="image/x-icon" />
 
